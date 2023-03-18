@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Space Mono', monospace;
+  
+}
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+header::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 93%);
+  }
+nav{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+   margin-top: 0.5%;
+   margin-left: 0.5%;
+    
+}
+
+ul{
+    display: flex;
+   width: 80vw;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    max-width: 1200px;
+}
+li{
+    font-size: 36px;
+    margin: 5%;
+    
+    font-weight: 700;
+    
+}
+.scrollArrow{
+    margin-top: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: url('arrow.webp'),  radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 72%) ;
+    height: 10vh;
+    width: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#oMnie{
+    background-color: #1c1c1c;
+    margin-top: 4vh;
+    height: 100.5vh;
+    margin-bottom: 20%;
+  
+    
+}
+.avatar{
+    height: 30vw;
+    background-color: #fff;
+    margin: 2%;
+
+}
+.oMnieContent{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    align-items: center;
+    max-width: 90vw;
+}
+
