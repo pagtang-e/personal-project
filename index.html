@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freestyle Snowboarding</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -20,67 +20,106 @@
       ></video>
 
       <nav>
-        <img src="logo.webp" alt="logo of the website" class="logo"/>
+        <img src="logo.webp" alt="logo of the website" class="logo" />
         <ul>
-          <li>O Mnie</li>
-          <li>Projekty</li>
-          <li>O Sporcie</li>
-          <li>Kontakt</li>
+          <li><a href="#oMnie" class="a">O Mnie</a></li>
+          <li><a href="#mojeProjekty">Projekty</a></li>
+          <li><a href="#">O Sporcie</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
 
-      <a  href="" aria-label="scroll downing button" class="scrollArrow"></a>
+      <a
+        href="#oMnie"
+        aria-label="scroll downing button"
+        class="scrollArrow"
+      ></a>
     </header>
     <main>
       <section id="oMnie">
         <div class="oMnieContent">
-        <img src="avatar.webp" alt="my social media avatar" class="avatar"/>
-        <div>
-        <h2>O Mnie</h2>
-        <p>
-          Jestem Zosia i chodzę do technikum nr.1 w Gliwicach. Lubię projektować
-          i tworzyć strony internetowe. Moje dotychczasowe projekty są pokazane
-          w zakładce projekty. Poza tym lubię jeżdzić na snowboardzie
-          freestylowo, w zimę co tydzień jeżdżę na stok, a przez cały rok
-          trenuję na sali, abym mogła w pełni wykorzystać czas spędzony w
-          górach. Więcej o tym sporcie napisałam w zakładce O sporcie.
-        </p>
-    </div>
-</div>
+          <img src="avatar.webp" alt="my social media avatar" class="avatar" />
+          <div>
+            <h2>O Mnie</h2>
+            <p>
+              Jestem Zosia i chodzę do technikum nr.1 w Gliwicach. Lubię
+              projektować i tworzyć strony internetowe. Moje dotychczasowe
+              projekty są pokazane w zakładce projekty. Poza tym lubię jeżdzić
+              na snowboardzie freestylowo, w zimę co tydzień jeżdżę na stok, a
+              przez cały rok trenuję na sali, abym mogła w pełni wykorzystać
+              czas spędzony w górach. Więcej o tym sporcie napisałam w zakładce
+              O sporcie.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="mojeProjekty">
-        <h2>Moje Projekty</h2>
-        <p>
-          tutaj znajdują się projekty stron i aplikacji 
-          internetowych nadktórymi pracowałam
-        </p>
-        <article>
-           <a href="" aria-label="link to the typing test website"><img src="ttTest.webp" alt=""></a>
-            <div>
-                <h3>Typing Test</h3>
-                <p>typing test to aplikacja internetowa która pozwala użytkownikowi sprawdzić swoje umiejętności pisania na klawiaturze poprzez wyświetlanie pojedynczych znaków które użytkownik ma wpisać. Przed rozpoczęciem gry można wybrać czas trwania oraz zestaw znaków które będą pojawiały się na ekranie. aplikacje jeszcze nie została ukończona</p>
-            </div>
+        <header>
+          <h2>Moje Projekty</h2>
+          <p>
+            tutaj znajdują się projekty stron i aplikacji internetowych
+            nadktórymi pracowałam
+          </p>
+        </header>
+
+        <article class="typingTest">
+          <img src="ttTest.webp" alt="" class="shadow" />
+          <a href="" aria-label="link to the typing test website" id="a"
+            ><img src="ttTest.webp" alt=""
+          /></a>
+          <div id="b">
+            <h3>Typing Test</h3>
+            <p>
+              typing test to aplikacja internetowa która pozwala użytkownikowi
+              sprawdzić swoje umiejętności pisania na klawiaturze poprzez
+              wyświetlanie pojedynczych znaków które użytkownik ma wpisać. Przed
+              rozpoczęciem gry można wybrać czas trwania oraz zestaw znaków
+              które będą pojawiały się na ekranie. aplikacje jeszcze nie została
+              ukończona
+            </p>
+          </div>
         </article>
-        <article>
-            <a href="" aria-label="link to the unchain website"></a><img src="Unchain.webp" alt=""></a>
-            <div>
-                <h3>Strona ZZT</h3>
-                <p>jest to strona internetowa stworzona na potrzeby grupy unchain która brała udział w olimpiadzie zwolnieni z teorii strona porusza problem okrucieństwa wobec zwierząt hodowlanych oraz opowiada o celach unchain.</p>
-            </div>
+        <article class="unchain">
+          <img src="Unchain.webp" alt="" class="shadow" />
+          <a href="" aria-label="link to the unchain website"><img src="Unchain.webp" alt=""/></a>
+          <div>
+            <h3>Strona ZZT</h3>
+            <p>
+              jest to strona internetowa stworzona na potrzeby grupy unchain
+              która brała udział w olimpiadzie zwolnieni z teorii strona porusza
+              problem okrucieństwa wobec zwierząt hodowlanych oraz opowiada o
+              celach unchain.
+            </p>
+          </div>
         </article>
-        <article>
-            <a href="" aria-label="link to the qr code website"></a><img src="qrCode.webp" alt=""></a>
-            <div>
-                <h3>Qr <Code></Code></h3>
-                <p>jest to strona internetowa która została stworzona jako zadanie ze strony frontend mentor przedstawia ona qr code wysyłający użytkownika do strony frontend mentor wraz z sloganem strony i opisem co robi </p>
-            </div>
+        <article class="qr">
+          <img src="qrCode.webp" alt="" class="shadow" />
+          <a href="" aria-label="link to the qr code website"
+            ><img src="qrCode.webp" alt=""
+          /></a>
+          <div>
+            <h3>Qr <code></code></h3>
+            <p>
+              jest to strona internetowa która została stworzona jako zadanie ze
+              strony frontend mentor przedstawia ona qr code wysyłający
+              użytkownika do strony frontend mentor wraz z sloganem strony i
+              opisem co robi
+            </p>
+          </div>
         </article>
-        <article>
-            <a href="" aria-label="link to the europes capitals website"> <img src="stoliceEuropy.webp" alt=""></a>
-            <div>
-                <h3>Stolice stoliceEuropy</h3>
-                <p>stolice europy to strona internetowa zawierająca animacje pisania wstępu opis strony tabelę wszystkich państw i ich stolic europy oraz krótki opis warszawy i ciekawostek z nią związanych</p>
-            </div>
+        <article class="stoliceEuropy">
+          <img src="stoliceEuropy.webp" alt="" class="shadow" />
+          <a href="" aria-label="link to the europes capitals website">
+            <img src="stoliceEuropy.webp" alt=""
+          /></a>
+          <div>
+            <h3>Stolice stoliceEuropy</h3>
+            <p>
+              stolice europy to strona internetowa zawierająca animacje pisania
+              wstępu opis strony tabelę wszystkich państw i ich stolic europy
+              oraz krótki opis warszawy i ciekawostek z nią związanych
+            </p>
+          </div>
         </article>
       </section>
     </main>

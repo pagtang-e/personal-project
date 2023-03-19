@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
     font-family: 'Space Mono', monospace;
+   
   
 }
 *{
@@ -67,13 +71,21 @@ li{
     background-repeat: no-repeat;
 
 }
+
 #oMnie{
     background-color: #1c1c1c;
-    margin-top: 4vh;
-    height: 100.5vh;
-    margin-bottom: 20%;
-  
-    
+    margin-top: 4.5vh;
+    height: 100vh;
+}
+#oMnie::after{
+    content: '';
+    background-color: #1c1c1c;
+    height: 0.5vh;
+    width: 100%;
+    position: absolute;
+    bottom: -0.5vh;
+    z-index: 100;
+
 }
 .avatar{
     height: 30vw;
@@ -85,8 +97,82 @@ li{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    height: 101vh;
     align-items: center;
     max-width: 90vw;
 }
 
+#oMnie p{
+    font-size: 1.7vw;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+   
+}
+nav a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    transition: width 0.3s, left 0.3s;
+}
+nav a:hover:after{
+    width: 110%;
+    left: -5%;
+}
+#mojeProjekty{
+    background-color: #404a3c;
+    margin: 0;
+   padding-bottom: 5%;
+
+}
+#mojeProjekty header{
+    margin-bottom: 5%;
+    text-align: center;
+}
+#mojeProjekty header p{
+    font-size: 2vw;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+h2{
+    margin: 0;
+    font-size: 5vw;
+    text-decoration: underline;
+}
+article{
+    display: flex;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    font-size: 1.5vw;
+    align-items: center;
+}
+article img{
+    width: 50vw;
+    border-radius: 1vw;
+    margin-right: 2VW;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+h3{
+    margin: 0;
+    font-size: 2.5vw;
+}
+.shadow {
+    width: 50vw;
+    position: absolute;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    margin-bottom: 1%;
+    opacity: 80%;
+}
