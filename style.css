@@ -43,17 +43,22 @@ nav{
    margin-left: 0.5%;
     
 }
+.logo{
+
+width: 20vw;
+
+}
 
 ul{
     display: flex;
    width: 80vw;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style-type: none;
     max-width: 1200px;
 }
 li{
-    font-size: 36px;
+    font-size: 30px;
     margin: 5%;
     
     font-weight: 700;
@@ -157,12 +162,30 @@ article{
     font-size: 1.5vw;
     align-items: center;
 }
+
 article img{
     width: 50vw;
     border-radius: 1vw;
     margin-right: 2VW;
     flex-shrink: 0;
     flex-grow: 1;
+}
+article a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.631);
+    width: 0;
+    height: 98%;
+    border-radius: 1vw;
+    transition: width 0.3s, left 0.3s;
+    
+}
+article a:hover::after{
+    
+    width: 50vw;
+    
 }
 h3{
     margin: 0;
