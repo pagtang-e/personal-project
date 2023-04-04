@@ -250,6 +250,8 @@ h3{
 .Snowboard{
     grid-area: Snowboard;
     margin-left: 10%;
+    height: auto;
+    width: auto;
 }
 .Snowboard img{
     width: 18vw;
