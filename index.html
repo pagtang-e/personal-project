@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" defer>
+<script src="script.js" defer></script>
   </head>
   <body>
+    
     <header id="pageHeader">
       <video
         src="backgorund.mp4"
@@ -27,7 +29,7 @@
         <ul>
           <li><a href="#oMnie" class="a">O Mnie</a></li>
           <li><a href="#mojeProjekty">Projekty</a></li>
-          <li><a href="#">O Sporcie</a></li>
+          <li><a href="#oSporcie">O Sporcie</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
@@ -115,7 +117,8 @@
         </article>
         <article class="stoliceEuropy">
           <img src="stoliceEuropy.webp" alt="" class="shadow" />
-          <a href="" aria-label="link to the europes capitals website">
+          <a href="https://pagtang-e.github.io/stolice-europy/" aria-label="link to the europes capitals website" target="_blank" rel="noopener noreferrer">
+            
             <img src="stoliceEuropy.webp" alt=""
           /><span><p>zobacz</p>
           </span></a>
@@ -129,28 +132,217 @@
           </div>
         </article>
       </section>
-      <section class="oSporcie">
+      <section class="oSporcie" id="oSporcie">
 <article class="oSporcieArticle">
 <h2>O Sporcie</h2>
 <p>Freestyle snowboarding to zimowy sport, w którym zawodnicy wykonują różne triki w powietrzu i na ziemi, jadąc na snowboardzie. Jest to najpopularniejszy styl snowboardingu, ponieważ zapewnia zawodnikom najwięcej wyzwań i emocji. Głównym celem tego sportu jest wykonanie różnych rodzajów skoków, jazdy po poręczach, trików, jazdy na half-pipe'ach oraz jazdy w technice switch. Freestyle snowboarding jest obecnie uprawiany i rywalizowany zarówno przez mężczyzn, jak i kobiety.</p>
 </article>
 <article class="Snowboard">
-  <h3>Snowboard</h3>
-<img src="snowboard.webp" alt="image of snow">
+  <h2>Snowboard</h2>
+<img src="153.png" alt="image of snow">
 </article>
 <article class="eventy">
-<h3>Eventy</h3>
+<h2>Eventy</h2>
 <ul>
-  <li>X Games Aspen</li>
-  <li>Laax Open</li>
-  <li>Olympic Games</li>
-<li>FIS World Cup</li>
+  <li onclick="xGames()" id="xGames">X Games Aspen</li>
+  <li onclick="laaxOpen()">Laax Open</li>
+  <li onclick="olympicGames()">Olympic Games</li>
+
 </ul>
+</article >
+<article class="X-Games" id="xGamesCard">
+  <span aria-label="popup close" onclick="hide()">x</span>
+  <div>   
+<h3>X GAMES</h3>
+<p>Historia rywalizacji najbardziej ekstremalnych sportowców świata rozpoczyna się w 1995 r. Od tej pory regularnie podchodzą oni do rywalizacji w ramach X Games igrzysk letnich i zimowych. Udział w zawodach bierze ponad 100 zawodników. Jak wyglądają ich występy? Po pierwsze: są bardzo widowiskowe, bo sportowcy całkowicie przeczą prawom grawitacji! Na najlepszych czekają medale i wielkie pieniądze!</p></div>
+<img src="xGamesLogo.png" alt="X games logo">
+<aside>
+<h3>WOMEN'S SNOWBOARD BIG AIR WYNIKI</h3>
+<table>
+  <tr>
+    <th>rank</th>
+    <th>name</th>
+    <th>run 1</th>
+    <th>run 2</th>
+    <th>run 3</th>
+    <th>run 4</th>
+    <th>run 5</th>
+    <th>best R</th>
+    <th>best L</th>
+    <th>best two</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Reira Iwabuchi</td>
+    <td>17R</td>
+    <td>40R</td>
+    <td>47L</td>
+    <td>36R</td>
+    <td>27R</td>
+    <td>40</td>
+    <td>47</td>
+    <td>87</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Zoi Sadowski-Synnott</td>
+    <td>27L</td>
+    <td>44L</td>
+    <td>34R</td>
+    <td>42R</td>
+    <td>44L</td>
+    <td>42</td>
+    <td>44</td>
+    <td>86</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Laurie Blouin</td>
+    <td>34R</td>
+    <td>13L</td>
+    <td>13L</td>
+    <td>12L</td>
+    <td>48L</td>
+    <td>34</td>
+    <td>48</td>
+    <td>82</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Mari Fukada</td>
+    <td>35L</td>
+    <td>32R</td>
+    <td>25R</td>
+    <td>39R</td>
+    <td>43R</td>
+    <td>43</td>
+    <td>35</td>
+    <td>78</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Miyabi Onitsuka</td>
+    <td>33L</td>
+    <td>34R</td>
+    <td>8R</td>
+    <td>42R</td>
+    <td>10L</td>
+    <td>42</td>
+    <td>33</td>
+    <td>75</td>
+  </tr>
+</table>
+</aside>
+</article>
+<article class="laaxOpen" id="laaxOpen">
+  <span aria-label="popup close" onclick="hide()">x</span>
+  <div>
+<h3>LAAX OPEN</h3>
+<p>LAAX OPEN to impreza, która zbiera w jednym miejscu snowboarderów z całego świata: od nowej generacji amatorów freestyle’u i wschodzących gwiazd po takich riderów jak Iouri Podladtchikov, Danny Davis czy Mark McMorris. Ideą wydarzenia jest nie tylko pokazanie najlepszych pro riderów kręcących triki na największym halfpipe’ie na świecie, ale przede wszystkim integracja pasjonatów freestyle’u i wspólna zabawa zarówno na stoku i snowparku, jak i poza nimi.</p></div>
+<img src="laaxOpen.png" alt="LAAX open logo">
+<aside>
+<h3>wyniki woman's slopestyle 2023</h3>
+<table>
+  <tr>
+    <th>rank</th>
+    <th>name</th>
+    <th>run </th>
+    <th>sections</th>
+    <th>overall</th>
+    <th>Score</th>
+    <th>best score</th>
+    <th>fis points</th>
+    
+  </tr>
+  <tr>
+    <td rowspan="2">1</td>
+    <td rowspan="2">Zoi Sadowski-Synnot</td>
+    <td>run 1</td>
+    <td>46.5</td>
+    <td>34.8</td>
+    <td>81.3</td>
+    <td rowspan="2">81.3</td>
+    <td rowspan="2">1000</td>
+    
+  </tr>
+  <tr>
+    <td>run 2</td>
+    <td>47.1</td>
+    <td>33.9</td>
+    <td>81</td>
+  </tr>
+  <tr>
+    <td rowspan="2">2</td>
+    <td rowspan="2">Mia Brookes</td>
+    <td>run 1</td>
+    <td>43.2</td>
+    <td>29.46</td>
+    <td>72.66</td>
+    <td rowspan="2">79.91</td>
+    <td rowspan="2">824.9</td>
+  </tr>
+  <tr>
+    <td>run 2</td>
+    <td>47.65</td>
+    <td>32.26</td>
+    <td>79.91</td>
+  </tr>
+  <tr>
+    <td rowspan="2">3</td>
+    <td rowspan="2">Anna Gasser</td>
+    <td>run 1</td>
+    <td>45.05</td>
+    <td>32</td>
+    <td>77.05</td>
+    <td rowspan="2">77.05</td>
+    <td rowspan="2">686.4</td>
+  </tr>
+  <tr>
+    <td>run 2</td>
+    <td>43.3</td>
+    <td>30.66</td>
+    <td>73.96</td>
+  </tr>
+</table>
+</aside>
+</article>
+<article class="olimpiada" id="olympics">
+  <span aria-label="popup close" onclick="hide()">x</span>
+  <div>
+<h3>Olimpiada zimowa</h3>
+<p>XXIV Zimowe Igrzyska Olimpijskie – odbyły się w Pekinie w dniach 4–20 lutego 2022 roku. Kalendarz i procedura aplikacji na stanowisko organizatora została ogłoszona przez MKOl w październiku 2012 roku, ustalono termin zgłaszania wniosków do 14 listopada 2013. Komitet Wykonawczy MKOl dokonał oficjalnie przeglądu ofert wszystkich miast kandydujących, w lipcu 2014 r. Gospodarz igrzysk został wybrany na 128. sesji MKOl 31 lipca 2015 roku w Kuala Lumpur.</p></div>
+<img src="olimpiada.jpeg" alt="logo olimpiady 2022">
+<aside>
+  <h3>wyniki woman's slopestyle 2022</h3>
+<table>
+  <tr>
+    <th>rank</th>
+    <th>team</th>
+    <th>name</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>NZL</td>
+    <td>Zoi Sadowski-Synnot</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>USA</td>
+    <td>Julia Marino</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>AUS</td>
+    <td>Tess Coady</td>
+  </tr>
+</table>
+</aside>
 </article>
 <article>
   <h3>Wybrani Sportowcy</h3>
 
 </article>
+
       </section>
     </main>
   </body>

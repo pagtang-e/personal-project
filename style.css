@@ -141,7 +141,7 @@ h2{
     font-size: 5vw;
     text-decoration: underline;
 }
-article{
+#mojeProjekty article{
     display: flex;
     width: 85vw;
     margin-left: auto;
@@ -150,62 +150,70 @@ article{
     font-size: 1.5vw;
     align-items: center;
     
+    
 }
 
-article a{
-
+#mojeProjekty article a{
+    line-height: 0;
+margin-right: 2VW;
 }
-article img{
+#mojeProjekty article img{
     width: 50vw;
     border-radius: 1vw;
-    margin-right: 2VW;
+   
     flex-shrink: 0;
     flex-grow: 1;
   
     
 }
-article span{
+#mojeProjekty article span{
     position: absolute;
     text-align: center;
-   background-color: rgba(28, 28, 28,0.6);
-    left: 0;
-    width: 14vw;
+   
+    width: 25%;
     height: 20%;
-    margin-top: 20%;
-    margin-left: 18vw;
-    color: #fff;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
     opacity: 0;
     transition: opacity 0.3s;
     border: 2px #fff solid;
     z-index: 1;
     border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
+    background-color: rgba(28, 28, 28,0.6);
+    color: #fff;
+ -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
 -moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
 box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
     
 
 }
-article span p{
-    margin-top: 9%;
+
+#mojeProjekty article span p{
+  
+    height: 100%;
+    text-decoration: underline;  
+    line-height: 100%;
 }
-article a:hover span{
+#mojeProjekty article a:hover span{
     
     opacity: 1;
 }
-article a::after{
+#mojeProjekty article a::after{
     content: ' ';
     position: absolute;
-    bottom: 1.75%;
+    bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.631);
-    height: 98.5%;
+    height: 100%;
     border-radius: 1vw;
     transition: opacity 0.3s;
     width: 50vw;
     opacity: 0;
 }
 
-article a:hover::after{
+#mojeProjekty article a:hover::after{
     
     opacity: 100%;
     
@@ -221,4 +229,118 @@ h3{
     filter: blur(50px);
     margin-bottom: 1%;
     opacity: 80%;
+}
+.oSporcie{
+    background-color: #4A5761;
+    display: grid;
+    grid-template-areas:
+    "oSporcie Snowboard"
+    "eventy Snowboard";
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    
+}
+.oSporcieArticle{
+  width: 45vw;
+  font-size: 2vw;
+  grid-area: oSporcie;
+  height: fit-content;
+}
+.Snowboard{
+    grid-area: Snowboard;
+    margin-left: 10%;
+}
+.Snowboard img{
+    width: 18vw;
+    margin-top: 2vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.X-Games, .laaxOpen, .olimpiada{
+   
+    
+    
+    background-color: #1c1c1c;
+    display: grid;
+    position: fixed;
+   width: 80vw;
+   top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+   grid-template-areas:
+   '. close' 
+   'opis zdjecie'
+   'tabela tabela';
+  border-radius: 15px;
+  display: none;
+  opacity: 0;
+    
+}
+.X-Games span, .laaxOpen span, .olimpiada span{
+    grid-area: close;
+  font-size: 2vw;
+  justify-self: end;
+  padding-right: 1.5vw;
+ 
+
+}
+.X-Games.active, .laaxOpen.active, .olimpiada.active{
+    display:grid;
+    opacity: 1;
+
+}
+
+.X-Games div, .laaxOpen div, .olimpiada div{
+    grid-area: opis;
+    padding: 1.5vw;
+    font-size: 1.2vw;
+    align-self: center;
+    
+}
+
+.X-Games img, .laaxOpen img, .olimpiada img{
+
+grid-area: zdjecie;
+height: 40vh;
+padding: 1.5vw;
+
+}
+
+.X-Games aside, .laaxOpen aside, .olimpiada aside{
+    grid-area: tabela;
+    padding: 1.5vw;
+   
+}
+table,th,td{
+    border: 1px #fff solid;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 0.3vw;
+}
+
+
+
+.eventy{
+margin-top: -20%;
+}
+.eventy li{
+    font-size: 3.5vw;
+    margin-left: 10%;
+    text-decoration: underline;
+}
+.eventy ul{
+    background-color: rgba(28, 28, 28, 0.75);
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   border-radius: 15px;
+   -webkit-box-shadow: 0px 0px 20px 0px #000;
+-moz-box-shadow: 0px 0px 20px 0px #000;
+box-shadow: 0px 0px 20px 0px #000;
 }
