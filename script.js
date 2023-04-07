@@ -34,3 +34,22 @@ function hide(){
     console.log("click");
     window.onscroll = function() {};
 }
+
+const buttons = document.getElementsByClassName('carousel-button');
+const buttonsArray = Array.from(buttons);
+buttonsArray.forEach(button => {
+
+    button.addEventListener('click', ()=>{
+        const offset = button.classList.contains("next") ? 1 : -1;
+        const slides = document.getElementById("carouselUl");
+        const activeSlide = slides.querySelector(".active");
+       let newIndex = Array.from(slides.children).indexOf(activeSlide) + offset;
+       if(newIndex < 0)newIndex = slides.children.length -1;
+       if (newIndex >= slides.children.length)newIndex=0;
+
+        slides.children[newIndex].classList.add('active')
+        activeSlide.classList.remove("active");
+
+    })
+
+});
