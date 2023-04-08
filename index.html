@@ -386,20 +386,33 @@
       </section>
       <section class="kontakt">
        <h2>Kontakt</h2>
-       <form action="#">
+       <div class="kontaktFlex">
+       <form action="https://formsubmit.co/zosia.mamrowicz@op.pl" method="POST" >
+        <div class="imieContainer"style="float: left; margin-right: 2em">
         <label for="">Imie</label>
-        <input type="text" id="imie">
+        <input type="text" id="imie" name="imie">
+      </div>
+      <div class="nazwiskoContainer" >
         <label for="">Nazwisko</label>
-        <input type="text" id="nazwisko">
-        <label for="">e-mail</label>
-        <input type="text" id="eMail">
-        <label for="wiadomosc"></label>
+        <input type="text" id="nazwisko" name="nazwisko">
+      </div>
+      <div class="eMailContainer">
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="wiadomoscContainer">
+        <label for="wiadomosc">wiadomość</label>
         <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" ></textarea>
+      </div>
+       
+        <input type="submit" value="wyślij" style="float: right; margin-right: 20%;">
+       </form>
+       <article>
         <p>jeśli masz do mnie jakieś pytania lub chcesz podzielić się 
           swoją opinią nie bój się napisać</p>
         <img src="avatar.webp" alt="mój avatar">
-        <input type="submit">
-       </form>
+       </article>
+       </div>
       </section>
     </main>
   </body>

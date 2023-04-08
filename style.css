@@ -419,10 +419,68 @@ font-size: 4vw;
 .kontakt{
     height: 100vh;
     background-color: #6E4E4E;
-    display: grid;
-   grid-template-areas: 
-   'imie nazwisko tekst'
-   'eMail eMail tekst'
-   'wiadomosc wiadomosc img'
-   'submit submit submit';
+    
+  
+}
+.kontaktFlex{
+  display: flex;
+align-items: center;
+}
+label,input {
+    display: block;
+}
+input, textarea{
+    color: #1c1c1c;
+   border: 2px #909090 solid;
+   border-radius: 10px;
+   outline: none;
+}
+input:focus , textarea:focus{
+    border: 2px #1c1c1c solid;
+}
+input{
+    font-size: 2em;
+    
+}
+textarea{
+    font-size: 1.5em;
+    width: 80%;
+    resize: none;
+    
+}
+form{
+    flex-basis: 70%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin-left: 5vw;
+}
+#email{
+    width: 80%;
+}
+.kontakt img{
+    height: 20em;
+   
+}
+label{
+    font-size: 1.5em;
+}
+.kontakt p{
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.kontakt article{
+  
+    margin-right: 5vw;
+}
+.kontakt h2{
+    font-size: 5em;
+    padding-block: 1rem;
+    margin-left: 5vw;
+}
+input[type="submit"]{
+    background: #484848;
+    width: 30%;
+    color: #fff;
+    padding-block: 5px;
 }
