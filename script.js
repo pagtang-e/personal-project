@@ -31,7 +31,6 @@ function hide(){
     laaxOpenCard.classList.remove('active');
     xGamesCard.classList.remove('active');
     olympicsCard.classList.remove('active')
-    console.log("click");
     window.onscroll = function() {};
 }
 
@@ -53,3 +52,28 @@ buttonsArray.forEach(button => {
     })
 
 });
+
+let openHamburger = document.getElementById('openHamburger');
+let navUl = document.querySelector('nav ul');
+let lines = document.getElementsByClassName('line');
+
+openHamburger.addEventListener('click', ()=>{
+
+navUl.classList.toggle('active');
+
+for(let i = 0; i < lines.length; i++)
+{
+    lines[i].classList.toggle('active');
+}
+
+})
+navUl.addEventListener('click', ()=>{
+
+    navUl.classList.remove('active');
+
+    for(let i = 0; i < lines.length; i++)
+    {
+        lines[i].classList.remove('active');
+    }
+
+})

@@ -28,6 +28,7 @@
 
       <nav>
         <img src="logo.webp" alt="logo of the website" class="logo" />
+      
         <ul>
           <li><a href="#oMnie" class="a">O Mnie</a></li>
           <li><a href="#mojeProjekty">Projekty</a></li>
@@ -35,6 +36,14 @@
           <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
+
+      <div class="hamburgerLines" aria-hidden="true">
+        <button aria-label="open navigation menu" class="openHamburger" id="openHamburger"></button>
+        <div class="line line1">  </div>
+        <div class="line line2"> </div>
+        <div class="line line3"> </div>
+
+      </div>
 
       <a
         href="#oMnie"
@@ -141,7 +150,7 @@
 </article>
 <article class="Snowboard">
   <h2>Snowboard</h2>
-<img src="153.webp" alt="image of snow">
+<img src="153.webp" alt="image of snowboard">
 </article>
 <article class="eventy">
 <h2>Eventy</h2>
@@ -389,11 +398,11 @@
        <div class="kontaktFlex">
        <form action="https://formsubmit.co/zosia.mamrowicz@op.pl" method="POST" >
         <div class="imieContainer"style="float: left; margin-right: 2em">
-        <label for="">Imie</label>
+        <label for="imie">Imie</label>
         <input type="text" id="imie" name="imie">
       </div>
       <div class="nazwiskoContainer" >
-        <label for="">Nazwisko</label>
+        <label for="nazwisko">Nazwisko</label>
         <input type="text" id="nazwisko" name="nazwisko">
       </div>
       <div class="eMailContainer">

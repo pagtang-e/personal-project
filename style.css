@@ -37,6 +37,9 @@ nav{
    margin-left: 0.5%;
     
 }
+.hamburgerLines{
+    opacity: 0;
+}
 .logo{
 
 width: 20vw;
@@ -483,4 +486,179 @@ input[type="submit"]{
     width: 30%;
     color: #fff;
     padding-block: 5px;
+}
+@media screen and (max-width: 1210px) {
+    
+.line{
+    width: 70px;
+    height: 7px;
+    background-color: #fff;
+    margin-block: 14px;
+    border-radius: 5px;
+}
+.openHamburger{
+    position: absolute;
+   padding: 0;
+   margin: 0;
+   width: 70px;
+   height: 70px;
+   opacity: 0;
+   z-index: 3;
+}
+.hamburgerLines{
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 2;
+}
+.line2{
+    margin-left: 15px;
+    width: 55px;
+}
+nav ul{
+    display: none;
+}
+.logo{
+    object-fit: contain;
+    width: 50vw;
+    height: 10vh;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.line{
+    transition:  transform 300ms;
+}
+
+.line.line1.active{
+    transform: translate(0%, 21px) rotate(45deg) ;
+}
+.line.line3.active{
+    transform: translate(0%,-21px) rotate(-45deg) ;
+}
+.line.line2.active{
+    transform: translateX(500%) ;
+}
+nav ul.active{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    justify-content: center;
+    background-color: #000000b0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.oMnieContent{
+    flex-direction: column;
+    height: auto;
+    padding-block: 15%;
+   
+    
+}
+.avatar{
+   height: 40vh;
+    float: left;
+    order: 2;
+}
+.oMnieContent h2{
+
+    font-size: 15vw;
+    
+
+}
+#oMnie p{
+    font-size: 20px;
+    
+}
+#oMnie{
+    text-align: center;
+    height: auto;
+    
+}
+#mojeProjekty article{
+    flex-direction: column;
+    font-size: 20px;
+}
+#mojeProjekty{
+    text-align: center;
+}
+#mojeProjekty article img{
+    width: 90vw;
+}
+#mojeProjekty article h3{
+    font-size: 30px;
+}
+#mojeProjekty header p{
+    font-size: 15px;
+    width: 85vw;
+}
+#mojeProjekty header h2{
+    font-size: 40px;
+}
+
+#mojeProjekty article a:hover::after{
+    
+    opacity: 0;
+    
+}
+#mojeProjekty article a:hover span{
+    
+    opacity: 0;
+}
+
+}
+@media screen and (max-width: 750px) {
+
+    .oSporcie{
+       
+        grid-template-areas:
+        "oSporcie Snowboard"
+        "eventy eventy"
+        'Sportowcy Sportowcy';
+        text-align: center;
+        
+        
+    }
+.oSporcieArticle h2{
+    font-size: 8vw;
+}
+.oSporcieArticle p{
+    font-size: 4vw;
+}
+.Snowboard{
+    width: 30vw;
+    overflow: hidden;
+    justify-self: right;
+    margin-right: -30%;
+}
+.Snowboard h2{
+    display: none;
+}
+.Snowboard img{
+
+width: 45vw;
+
+}
+
+.eventy{
+    
+    height: 150%;
+    width: 200%;
+    margin-top: 0;
+}
+.eventy li{
+    font-size: 30px;
+    margin-left: 0;
+}
+.eventy ul{
+   
+}
+
 }
