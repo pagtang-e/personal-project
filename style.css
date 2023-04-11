@@ -420,7 +420,7 @@ font-size: 4vw;
    padding: 0;
 }
 .kontakt{
-    height: 100vh;
+    padding-bottom: 5%;
     background-color: #6E4E4E;
     
   
@@ -486,6 +486,12 @@ input[type="submit"]{
     width: 30%;
     color: #fff;
     padding-block: 5px;
+    float: right; 
+    margin-right: 20%;
+}
+.imieContainer{
+   float: left;
+   margin-right: 2em
 }
 @media screen and (max-width: 1210px) {
     
@@ -657,8 +663,6 @@ width: 45vw;
     font-size: 30px;
     margin-left: 0;
 }
-.eventy ul{
-   
-}
+
 
 }
