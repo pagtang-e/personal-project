@@ -428,9 +428,11 @@ font-size: 4vw;
 .kontaktFlex{
   display: flex;
 align-items: center;
+
 }
 label,input {
     display: block;
+    
 }
 input, textarea{
     color: #1c1c1c;
@@ -456,6 +458,7 @@ form{
     flex-shrink: 0;
     flex-grow: 1;
     margin-left: 5vw;
+   
 }
 #email{
     width: 80%;
@@ -466,6 +469,8 @@ form{
 }
 label{
     font-size: 1.5em;
+   
+    
 }
 .kontakt p{
     font-size: 1.2em;
@@ -492,6 +497,14 @@ input[type="submit"]{
 .imieContainer{
    float: left;
    margin-right: 2em
+}
+.nazwiskoContainer{
+   
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 30rem;
+    
 }
 @media screen and (max-width: 1210px) {
     
