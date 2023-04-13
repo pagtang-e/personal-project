@@ -677,5 +677,25 @@ width: 45vw;
     margin-left: 0;
 }
 
+input, textarea{
+
+width: 90vw;
+
+}
+.kontaktFlex{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.kontaktFlex article{
+    margin: 0;
+}
+form div{
+
+    margin-left: auto;
+    margin-right: auto;
+   
+}
 
 }
