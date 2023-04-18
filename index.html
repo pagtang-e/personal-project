@@ -16,7 +16,7 @@
   <body>
     
     <header id="pageHeader">
-      <video
+      <video aria-hidden="true"
         src="backgorund.mp4"
         autoplay
         muted
@@ -33,27 +33,27 @@
           <li><a href="#oMnie" class="a">O Mnie</a></li>
           <li><a href="#mojeProjekty">Projekty</a></li>
           <li><a href="#oSporcie">O Sporcie</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
         </ul>
+
+        <div class="hamburgerLines" aria-label="container for navigation menu">
+          <button aria-label="open navigation menu" aria-expanded="false" class="openHamburger" id="openHamburger"></button>
+          <div class="line line1" aria-hidden="true">  </div>
+          <div class="line line2" aria-hidden="true"> </div>
+          <div class="line line3" aria-hidden="true"> </div>
+  
+        </div>
       </nav>
-
-      <div class="hamburgerLines" aria-hidden="true">
-        <button aria-label="open navigation menu" class="openHamburger" id="openHamburger"></button>
-        <div class="line line1">  </div>
-        <div class="line line2"> </div>
-        <div class="line line3"> </div>
-
-      </div>
 
       <a
         href="#oMnie"
-        aria-label="scroll downing button"
+        aria-label="scroll down button"
         class="scrollArrow"
       ></a>
     </header>
     <main>
       <section id="oMnie">
-        <div class="oMnieContent">
+        <article class="oMnieContent">
           <img src="avatar.webp" alt="my social media avatar" class="avatar" />
           <div>
             <h2>O Mnie</h2>
@@ -67,7 +67,7 @@
               O sporcie.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section id="mojeProjekty">
         <header>
@@ -79,10 +79,10 @@
         </header>
 
         <article class="typingTest">
-          <img src="ttTest.webp" alt="" class="shadow" />
+          <img src="ttTest.webp" aria-hidden="true" class="shadow" />
           <a href="https://pagtang.github.io/typing-test/"  target="_blank" rel="noopener noreferrer" aria-label="link to the typing test website" id="a"
-            ><img src="ttTest.webp" alt=""/>
-          <span><p>zobacz</p>
+            ><img src="ttTest.webp" alt="image of the typing test website"/>
+          <span>zobacz
             </span></a>
           <div id="b">
             <h3>Typing Test</h3>
@@ -97,8 +97,8 @@
           </div>
         </article>
         <article class="unchain">
-          <img src="Unchain.webp" alt="" class="shadow" />
-          <a href="https://pagtang-e.github.io/zzt_webpage/" aria-label="link to the unchain website" target="_blank" rel="noopener noreferrer"><img src="Unchain.webp" alt=""/><span><p>zobacz</p>
+          <img src="Unchain.webp" aria-hidden="true" class="shadow" />
+          <a href="https://pagtang-e.github.io/zzt_webpage/" aria-label="link to the unchain website" target="_blank" rel="noopener noreferrer"><img src="Unchain.webp" alt="image of unchain website"/><span><p>zobacz</p>
           </span></a>
           <div>
             <h3>Strona ZZT</h3>
@@ -111,9 +111,9 @@
           </div>
         </article>
         <article class="qr">
-          <img src="qrCode.webp" alt="" class="shadow" />
+          <img src="qrCode.webp" aria-hidden="true" class="shadow" />
           <a href="https://pagtang.github.io/qr-code-component-main/" aria-label="link to the qr code website" target="_blank" rel="noopener noreferrer"
-            ><img src="qrCode.webp" alt=""
+            ><img src="qrCode.webp" alt="image of qr code website"
           /><span><p>zobacz</p>
           </span></a>
           <div>
@@ -127,10 +127,10 @@
           </div>
         </article>
         <article class="stoliceEuropy">
-          <img src="stoliceEuropy.webp" alt="" class="shadow" />
+          <img src="stoliceEuropy.webp" aria-hidden="true" class="shadow" />
           <a href="https://pagtang-e.github.io/stolice-europy/" aria-label="link to the europes capitals website" target="_blank" rel="noopener noreferrer">
             
-            <img src="stoliceEuropy.webp" alt=""
+            <img src="stoliceEuropy.webp" alt="image of stolice europy website"
           /><span><p>zobacz</p>
           </span></a>
           <div>
@@ -144,26 +144,25 @@
         </article>
       </section>
       <section class="oSporcie" id="oSporcie">
-<article class="oSporcieArticle">
+<header class="oSporcieArticle">
 <h2>O Sporcie</h2>
 <p>Freestyle snowboarding to zimowy sport, w którym zawodnicy wykonują różne triki w powietrzu i na ziemi, jadąc na snowboardzie. Jest to najpopularniejszy styl snowboardingu, ponieważ zapewnia zawodnikom najwięcej wyzwań i emocji. Głównym celem tego sportu jest wykonanie różnych rodzajów skoków, jazdy po poręczach, trików, jazdy na half-pipe'ach oraz jazdy w technice switch. Freestyle snowboarding jest obecnie uprawiany i rywalizowany zarówno przez mężczyzn, jak i kobiety.</p>
-</article>
+</header>
 <article class="Snowboard">
   <h2>Snowboard</h2>
-<img src="153.webp" alt="image of snowboard">
+<img src="153.webp" alt="image of a snowboard">
 </article>
 <article class="eventy">
 <h2>Eventy</h2>
 <ul>
-  <li onclick="xGames()" id="xGames">X Games Aspen</li>
-  <li onclick="laaxOpen()">Laax Open</li>
-  <li onclick="olympicGames()">Olympic Games</li>
+  <li onclick="xGames()"> <button aria-label="open popup about X Games" aria-expanded="false" id="xGamesBtn">X Games Aspen</button></li>
+  <li onclick="laaxOpen()"><button aria-label="open popup about Laax Open" aria-expanded="false" id="laaxOpenBtn">Laax Open</button></li>
+  <li onclick="olympicGames()"><button aria-label="open popup about Olympic Games" aria-expanded="false" id="olympicGamesBtn">Olympic Games</button></li>
 
 </ul>
-</article >
 <article class="X-Games" id="xGamesCard">
-  <span aria-label="popup close" onclick="hide()">x</span>
-  <div>   
+  <button aria-label="popup close" onclick="hide()">x</button>
+  <div aria-label="description of X Games">   
 <h3>X GAMES</h3>
 <p>Historia rywalizacji najbardziej ekstremalnych sportowców świata rozpoczyna się w 1995 r. Od tej pory regularnie podchodzą oni do rywalizacji w ramach X Games igrzysk letnich i zimowych. Udział w zawodach bierze ponad 100 zawodników. Jak wyglądają ich występy? Po pierwsze: są bardzo widowiskowe, bo sportowcy całkowicie przeczą prawom grawitacji! Na najlepszych czekają medale i wielkie pieniądze!</p></div>
 <img src="xGamesLogo.webp" alt="X games logo">
@@ -246,8 +245,8 @@
 </aside>
 </article>
 <article class="laaxOpen" id="laaxOpen">
-  <span aria-label="popup close" onclick="hide()">x</span>
-  <div>
+  <button aria-label="popup close" onclick="hide()">x</button>
+  <div aria-label="description of Laax Open">
 <h3>LAAX OPEN</h3>
 <p>LAAX OPEN to impreza, która zbiera w jednym miejscu snowboarderów z całego świata: od nowej generacji amatorów freestyle’u i wschodzących gwiazd po takich riderów jak Iouri Podladtchikov, Danny Davis czy Mark McMorris. Ideą wydarzenia jest nie tylko pokazanie najlepszych pro riderów kręcących triki na największym halfpipe’ie na świecie, ale przede wszystkim integracja pasjonatów freestyle’u i wspólna zabawa zarówno na stoku i snowparku, jak i poza nimi.</p></div>
 <img src="laaxOpen.webp" alt="LAAX open logo">
@@ -318,8 +317,8 @@
 </aside>
 </article>
 <article class="olimpiada" id="olympics">
-  <span aria-label="popup close" onclick="hide()">x</span>
-  <div>
+  <button aria-label="popup close" onclick="hide()">x</button>
+  <div aria-label="description of olympics">
 <h3>Olimpiada zimowa</h3>
 <p>XXIV Zimowe Igrzyska Olimpijskie – odbyły się w Pekinie w dniach 4–20 lutego 2022 roku. Kalendarz i procedura aplikacji na stanowisko organizatora została ogłoszona przez MKOl w październiku 2012 roku, ustalono termin zgłaszania wniosków do 14 listopada 2013. Komitet Wykonawczy MKOl dokonał oficjalnie przeglądu ofert wszystkich miast kandydujących, w lipcu 2014 r. Gospodarz igrzysk został wybrany na 128. sesji MKOl 31 lipca 2015 roku w Kuala Lumpur.</p></div>
 <img src="olimpiada.webp" alt="logo olimpiady 2022">
@@ -349,12 +348,14 @@
 </table>
 </aside>
 </article>
+</article >
+
 
 <article aria-label="wybrani sportowcy" class="wybraniSportowcy">
   <h3>Wybrani Sportowcy</h3>
   <div class="carousel" id="carousel">
-    <button class="carousel-button prev">&#8701;</button>
-    <button class="carousel-button next">&#8702;</button>
+    <button class="carousel-button prev" aria-label="show previous slide">&#8701;</button>
+    <button class="carousel-button next" aria-label="show next slide">&#8702;</button>
     <ul id="carouselUl">
       <li class="carousel-item 1 " >
         <h3>Zoi Sadowski Synnot</h3>
@@ -416,11 +417,11 @@
        
         <input type="submit" value="wyślij">
        </form>
-       <article>
+       <aside>
         <p>jeśli masz do mnie jakieś pytania lub chcesz podzielić się 
           swoją opinią nie bój się napisać</p>
         <img src="avatar.webp" alt="mój avatar">
-       </article>
+       </aside>
        </div>
       </section>
     </main>
