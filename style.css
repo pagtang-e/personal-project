@@ -412,11 +412,11 @@ font-size: 4vw;
     position: relative;
 }
 .carousel button.prev{
-    margin-left: -7vw;
+    margin-left: -10vw;
     left: 0;
 }
 .carousel button.next{
-    margin-right: -7vw;
+    margin-right: -10vw;
     right: 0;
 }
 .wybraniSportowcy ul{
@@ -661,7 +661,7 @@ nav ul.active{
     font-size: 4vw;
     width: 95vw;
     height: 95vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     grid-template-areas:
     'close' 
     'zdjecie'
@@ -670,11 +670,9 @@ nav ul.active{
    
 }
 .X-Games img, .laaxOpen img, .olimpiada img{
-
- 
-   
-   
-    }
+    width: 100%;
+    object-fit: contain;
+}
 .X-Games div, .laaxOpen div, .olimpiada div{
   
    
@@ -682,11 +680,19 @@ nav ul.active{
     align-self: center;
     
 }
-aside{
+.X-Games aside, .laaxOpen aside, .olimpiada aside{
    width: 95vw;
-   overflow-x: auto;
+   height: fit-content;
+  overflow-x: scroll;
 }
+.X-Games button, .laaxOpen button, .olimpiada button{
+    font-size: 8vw;
+}
+.X-Games h3, .laaxOpen h3, .olimpiada h3{
 
+font-size: 8vw;
+
+}
 }
 @media screen and (max-width: 750px) {
 
@@ -726,7 +732,12 @@ width: 45vw;
 input, textarea{
 
 width: 90vw;
+margin-left: auto;
+margin-right: auto;
 
+}
+#email{
+    width: 90vw;
 }
 .kontaktFlex{
     flex-wrap: wrap;
@@ -737,16 +748,25 @@ width: 90vw;
 .kontaktFlex article{
     margin: 0;
 }
-form div{
-
-    margin-left: auto;
-    margin-right: auto;
-   
+.kontaktFlex{
+    width: 100vw;
+}
+.kontakt
+{
+    padding: 0;
 }
 form{
     width: 100vw;
+    margin: 0;
+    padding-bottom: 1rem;
 }
-
+.kontakt h2{
+    text-align: center;
+    margin: 0;
+}
+form div{
+    width: 100%;
+}
 html{
 
     overflow-x: hidden;
@@ -769,6 +789,41 @@ html{
     width: 100%;
     padding-block: 1rem;
     
+}
+.carousel-item{
+    grid-template-areas: 
+    'tytul'
+    'opis'
+    'zdjecie';
+
+}
+.carousel-item p{
+    font-size: 4vw;
+}
+
+.carousel-item img{
+    width: 80vw;
+}
+.carousel-item h3{
+    font-size: 8vw;
+}
+.carousel{
+    height: 105vh;
+}
+.carousel button{
+    top: 50%;
+    font-size: 20vw;
+}
+.wybraniSportowcy h3{
+    font-size: 8vw;
+    margin-top: 10%;
+}
+input[type="submit"]{
+    margin-right: 5%;
+    
+}
+.kontakt aside{
+    width: 90vw;
 }
 
 }
