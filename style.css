@@ -64,6 +64,7 @@ header li{
     
 }
 .scrollArrow{
+    margin-top: 75svh;
     margin-top: 75vh;
     margin-left: auto;
     margin-right: auto;
@@ -236,8 +237,8 @@ h3{
     background-color: #4A5761;
     display: grid;
     grid-template-areas:
-    "oSporcie Snowboard"
-    "eventy Snowboard"
+    'oSporcie Snowboard'
+    'eventy Snowboard'
     'Sportowcy Sportowcy';
     padding-left: 10%;
     padding-right: 10%;
@@ -336,6 +337,7 @@ th,td{
 
 .eventy{
 margin-top: -20%;
+grid-area: eventy;
 }
 
 .eventy ul{
@@ -423,7 +425,7 @@ font-size: 4vw;
 .kontakt{
     padding-bottom: 5%;
     background-color: #6E4E4E;
-    
+   padding-right: 5%;
   
 }
 .kontaktFlex{
@@ -495,6 +497,9 @@ input[type="submit"]{
     float: right; 
     margin-right: 20%;
 }
+input[type="submit"]:hover{
+    background: #909090;
+}
 .imieContainer{
    float: left;
    margin-right: 2em
@@ -514,6 +519,14 @@ border: none;
 font-size: 3.5vw;
 text-decoration: underline;
 
+}
+footer{
+    background-color: #1c1c1c;
+}
+footer p {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
 }
 @media screen and (max-width: 1210px) {
     
@@ -583,6 +596,7 @@ nav ul.active{
     background-color: #000000b0;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    padding: 0;
 }
 .oMnieContent{
     flex-direction: column;
@@ -644,26 +658,33 @@ nav ul.active{
 
 .X-Games, .laaxOpen, .olimpiada{
 
-    font-size: 2vw;
+    font-size: 4vw;
     width: 95vw;
     height: 95vh;
+    overflow-y: auto;
+    grid-template-areas:
+    'close' 
+    'zdjecie'
+    'opis'
+    'tabela';
    
 }
 .X-Games img, .laaxOpen img, .olimpiada img{
 
-   height: auto;
-   width: 20vw;
+ 
+   
    
     }
 .X-Games div, .laaxOpen div, .olimpiada div{
   
    
-    font-size: 2vw;
+    font-size: 4vw;
     align-self: center;
     
 }
 aside{
-    overflow: auto;
+   width: 95vw;
+   overflow-x: auto;
 }
 
 }
@@ -672,8 +693,8 @@ aside{
     .oSporcie{
        
         grid-template-areas:
-        "oSporcie Snowboard"
-        "eventy eventy"
+        'oSporcie Snowboard'
+        'eventy eventy'
         'Sportowcy Sportowcy';
         text-align: center;
         
@@ -689,7 +710,7 @@ aside{
     width: 30vw;
     overflow: hidden;
     justify-self: right;
-    margin-right: -30%;
+    
 }
 .Snowboard h2{
     display: none;
@@ -729,6 +750,25 @@ form{
 html{
 
     overflow-x: hidden;
+}
+
+.eventy{
+    margin-top: 0;
+}
+.eventy h2{
+    font-size: 8vw;
+}
+.eventy{
+    font-size: 4vw;
+    justify-self: center;
+    width: 75vw;
+    
+}
+.eventy ul{
+    margin: 0;
+    width: 100%;
+    padding-block: 1rem;
+    
 }
 
 }
