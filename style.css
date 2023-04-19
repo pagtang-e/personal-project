@@ -24,6 +24,17 @@ video{
     object-fit: cover;
     
 }
+.arrowUp{
+    position: fixed;
+    font-size: 4vw;
+    right: 1%;
+    bottom: 1%;
+    width: 1.6em;
+    background-color: #1c1c1c;
+    text-align: center;
+    border-radius: 10em;
+    border: 1px solid #fff;
+}
 
   #pageHeader{
     height: 100vh;
@@ -693,6 +704,9 @@ nav ul.active{
 font-size: 8vw;
 
 }
+.arrowUp{
+    font-size: 10vw;
+}
 }
 @media screen and (max-width: 750px) {
 
@@ -824,6 +838,9 @@ input[type="submit"]{
 }
 .kontakt aside{
     width: 90vw;
+}
+.nazwiskoContainer{
+    width: 100%;
 }
 
 }
