@@ -1,4 +1,5 @@
 
+
 let xGamesCard = document.getElementById('xGamesCard');
 let xGamesBtn = document.getElementById('xGamesBtn');
 
@@ -110,3 +111,21 @@ navUl.addEventListener('click', ()=>{
    openHamburger.setAttribute(aria-expanded, false)
 
 })
+let arrowUp = document.querySelector(".arrowUp");
+window.onscroll = function(){
+
+    if(window.pageYOffset>window.innerHeight){
+
+
+        arrowUp.style.opacity = "1";
+
+    }
+    else{
+
+        arrowUp.style.opacity="0"
+
+    }
+
+   
+
+}

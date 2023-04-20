@@ -19,8 +19,10 @@ video{
     z-index: -1;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    
+    width: 100vw;
+    height: 100dvh;
+    height: 100VH;
     object-fit: cover;
     
 }
@@ -32,11 +34,15 @@ video{
     width: 1.6em;
     background-color: #1c1c1c;
     text-align: center;
-    border-radius: 10em;
+    border-radius: 100%;
     border: 1px solid #fff;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
 }
 
   #pageHeader{
+    height: 100Dvh;
     height: 100vh;
     background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.95) 93%);
   }
@@ -187,8 +193,8 @@ margin-right: 2VW;
     width: 25%;
     height: 20%;
     top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     opacity: 0;
     transition: opacity 0.3s;
@@ -197,19 +203,15 @@ margin-right: 2VW;
     border-radius: 15px;
     background-color: rgba(28, 28, 28,0.6);
     color: #fff;
- -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
--moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
-    
-
-}
-
-#mojeProjekty article span p{
-  
-    height: 100%;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);    
     text-decoration: underline;  
-    line-height: 100%;
+    line-height: 300%;
+
 }
+
+
 #mojeProjekty article a:hover span{
     
     opacity: 1;
@@ -423,11 +425,11 @@ font-size: 4vw;
     position: relative;
 }
 .carousel button.prev{
-    margin-left: -10vw;
+    margin-left: -7vw;
     left: 0;
 }
 .carousel button.next{
-    margin-right: -10vw;
+    margin-right: -7vw;
     right: 0;
 }
 .wybraniSportowcy ul{
@@ -605,8 +607,9 @@ nav ul.active{
     height: 100dvh;
     justify-content: center;
     background-color: #000000b0;
-    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    
     padding: 0;
 }
 .oMnieContent{
@@ -667,7 +670,12 @@ nav ul.active{
     opacity: 0;
 }
 
-.X-Games, .laaxOpen, .olimpiada{
+
+
+}
+@media screen and (max-width: 750px) {
+
+    .X-Games, .laaxOpen, .olimpiada{
 
     font-size: 4vw;
     width: 95vw;
@@ -704,12 +712,10 @@ nav ul.active{
 font-size: 8vw;
 
 }
-.arrowUp{
-    font-size: 10vw;
-}
-}
-@media screen and (max-width: 750px) {
 
+    .arrowUp{
+        font-size: 10vw;
+    }
     .oSporcie{
        
         grid-template-areas:
@@ -825,7 +831,7 @@ html{
     height: 105vh;
 }
 .carousel button{
-    top: 50%;
+    top: 30%;
     font-size: 20vw;
 }
 .wybraniSportowcy h3{
@@ -834,13 +840,25 @@ html{
 }
 input[type="submit"]{
     margin-right: 5%;
+    font-size: 8vw;
     
+}
+.kontakt h2{
+    font-size: 20vw;
 }
 .kontakt aside{
     width: 90vw;
 }
 .nazwiskoContainer{
     width: 100%;
+}
+.carousel button.prev{
+    margin-left: -10vw;
+    left: 0;
+}
+.carousel button.next{
+    margin-right: -10vw;
+    right: 0;
 }
 
 }
