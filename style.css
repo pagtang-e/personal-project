@@ -417,6 +417,7 @@ top: 150%;
 background: none;
 border: none;
 font-size: 4vw;
+padding: 0;
 
 }
 .carousel{
@@ -504,7 +505,7 @@ label{
 }
 input[type="submit"]{
     background: #484848;
-    width: 30%;
+   padding: 2rem;
     color: #fff;
     padding-block: 5px;
     float: right; 
@@ -852,13 +853,6 @@ input[type="submit"]{
 .nazwiskoContainer{
     width: 100%;
 }
-.carousel button.prev{
-    margin-left: -10vw;
-    left: 0;
-}
-.carousel button.next{
-    margin-right: -10vw;
-    right: 0;
-}
+
 
 }
