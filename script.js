@@ -80,6 +80,8 @@ let lines = document.getElementsByClassName('line');
 
 openHamburger.addEventListener('click', ()=>{
 
+   
+
 navUl.classList.toggle('active');
 
 for(let i = 0; i < lines.length; i++)
@@ -90,10 +92,14 @@ for(let i = 0; i < lines.length; i++)
 if(navUl.classList.contains('active')){
     openHamburger.setAttribute('aria-label','close navigation menu')
     openHamburger.setAttribute('aria-expanded', true)
+    disableScroll();
 }
 else{
     openHamburger.setAttribute('aria-label','open navigation menu')
    openHamburger.setAttribute('aria-expanded', false)
+   window.onscroll = function() {
+    
+   };
 }
 
 
@@ -113,7 +119,7 @@ navUl.addEventListener('click', ()=>{
 })
 let arrowUp = document.querySelector(".arrowUp");
 window.onscroll = function(){
-
+  
     if(window.pageYOffset>window.innerHeight){
 
 

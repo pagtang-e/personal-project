@@ -175,7 +175,7 @@ h2{
 
 #mojeProjekty article a{
     line-height: 0;
-margin-right: 2VW;
+    margin-right: 1em;
 }
 #mojeProjekty article img{
     width: 50vw;
@@ -671,7 +671,9 @@ nav ul.active{
     opacity: 0;
 }
 
-
+#mojeProjekty article a{
+    margin-right: 0;
+}
 
 }
 @media screen and (max-width: 750px) {
